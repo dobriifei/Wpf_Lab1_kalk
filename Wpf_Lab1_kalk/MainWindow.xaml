@@ -1,0 +1,41 @@
+﻿<Window x:Class="Wpf_Lab1_kalk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Lab1_kalk"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="600" Width="450">
+    <Grid Background="Black">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="490" Width="423" Margin="10,70,0,0">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1179C2" Offset="0"/>
+                    <GradientStop Color="#FF1FB19F" Offset="1"/>
+                    <GradientStop Color="#FF67A9D0" Offset="0.11"/>
+                </LinearGradientBrush>
+            </TextBlock.Background></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Калькулятор" VerticalAlignment="Top" Height="40" Width="160" Foreground="#FFF9F1F1" FontSize="24" Margin="50,10,0,0" FontStretch="ExtraCondensed" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="40" Foreground="#FFF9F1F1" FontSize="22" Margin="244,10,0,0" Background="#FF4F2F2F"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="40" Foreground="#FFF9F1F1" FontSize="22" Margin="299,10,0,0" Background="#FF4F2F2F" RenderTransformOrigin="1.24,0.635"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="40" Foreground="#FFF9F1F1" FontSize="22" Margin="353,10,0,0" Background="#FF4F2F2F" RenderTransformOrigin="1.24,0.635"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="390" Foreground="#FFF9F1F1" FontSize="22" Margin="30,90,0,0" Background="#FFFAEDED"/>
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="30,0,0,292.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="130,0,0,292.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="230,0,0,292.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="340,0,0,292.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click_1"/>
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="30,0,0,206.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="130,0,0,206.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="230,0,0,206.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="340,0,0,206.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click_1"/>
+        <Button Content="7" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="30,0,0,118.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="130,0,0,118.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="230,0,0,118.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click"/>
+        <Button Content="*" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="340,0,0,118.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click_1"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="30,0,0,30.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="," HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="130,0,0,30.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB"/>
+        <Button Content="=" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="230,0,0,30.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click"/>
+        <Button Content="/" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="80" RenderTransformOrigin="0.467,5.208" Height="75" Margin="340,0,0,30.4" FontSize="36" FontWeight="Bold" Background="#FFA3AAAB" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
